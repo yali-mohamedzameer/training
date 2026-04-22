@@ -23,3 +23,8 @@ queries :
 9. insert into table_name values(1,"Punjab Kings",5,0,10;) - passing values inside
 10. select * from table_name - selecting and showing the datas
 11. Conditions : Where - select * from IPL where name ="SRH"; 
+12. eg with wildcard : 
+    select * from IPL_Standings where name like 'R%';
+    select * from IPL_Standings where name like '%R%';
+    select * from IPL_Standings where name like '%R';
+    select * from IPL_Standings where name like '__j%';
