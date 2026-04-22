@@ -1,0 +1,22 @@
+My SQL - Structured Query Language
+
+Datatypes:
+text : char , varchar, Text, Blob
+Number : Tinyint, Smallint, Mediumint, int, Bigint, Float, Double
+Blob - Binary large Object File : Tinyblob, blob, Mediumblob, largeblob
+
+
+queries :
+
+1. show database db_name
+2. create database db_name
+3. drop database db_name
+4. use db_name - it uses the database
+5. show tables - it shows the all tables in the currrent database
+6. create table table_name - it create the table 
+   eg:
+   create table IPL_PointsTable(
+    Id(Position) Int, name varchar(30), win int , loss int, points int
+   )
+7. alter table table_name add new_colname  int(Datatype)
+8. alter table table_name drop col_name - drops column
