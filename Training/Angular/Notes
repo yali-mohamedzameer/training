@@ -1,0 +1,74 @@
+21-APR-2026
+
+AngularJS 
+
+MVC - Model , view , Controller 
+
+Model - Data
+View - UI 
+Controller - Interaction between model and view
+
+AngularJS - Data Binding :
+Synchronization of model and view part
+
+two types - one way and two way data binding'
+
+Oneway :
+
+Data flows in one way from model to view 
+- can use ng-bind or {{expression}}
+
+-Model data combines with html to show the output for user
+
+
+TwoWay:
+
+Data flows in bidirectional , changes in VIEW will affect Model and Changes in MODEL affect View
+- can use ng-model directive
+- used in textbox , text area , select , buttons
+-Event triggers at view side by users
+
+
+AngularJS-Expressions
+
+· AngularJS evaluates expression and bind the result with
+HTML similar to Javascript
+· Contains literals, operators, variables
+· {{expression}}, ng-bind=expression
+· Numbers, strings, objects, Arrays are used in expressions
+. ng-app = " ", ng-app
+· ng-init is used to initialize the variables
+· cannot Contains loops, conditions, exceptions , functions,comma
+
+
+AngularJS-Directives
+
+. Extends the HTML element attributes
+· Mostly start with ng-
+. Contains many built-in directives
+· Able to create and customize directives
+. Can also start with x-, data-, : , _
+
+-  Builtln Directives:
+
+· ng-app
+· ng-init
+· ng-model 
+· ng-bind
+· ng-controller
+. ng-repeat
+· ng-readonly
+· ng-disabled
+· ng-if
+
+
+AngularJS-Controller
+
+. Controller is a JavaScript object contains properties and
+functions
+· Application data's are controlled by controllers
+. Controllers manage the data between model and view
+· $scope is used as parameter refers the module controlled by
+the controller
+· ng-controller directive is used
+. Controllers can be stored as external files

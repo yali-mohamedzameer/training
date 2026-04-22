@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MvcApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/angular@1.8.2/angular.min.js"></script>
+    <script type="text/javascript">
+
+        //Controller
+        var app = angular.module("MvcApp", []);
+
+        //Model
+        app.controller('Customer', function ($scope) {
+
+            $scope.customer = {
+                'name': 'Zameer',
+                'age': 19,
+                'job': "SE"
+            }
+
+        });
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <h1>MVC Arch</h1>
+
+    <div ng-controller="Customer">
+        <h3>{{customer.name}}</h3>
+        <h3>{{customer.age}}</h3>
+        <h3>{{customer.job}}</h3>
+
+    </div>
+
+</body>
+
+</html>

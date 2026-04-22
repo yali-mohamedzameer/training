@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/angular@1.8.2/angular.min.js"></script>
+    <title>directives</title>
+
+
+    <script type="text/javascript">
+        var app = angular.module("myApp", []);
+        app.controller("MyController", function ($scope) {
+            $scope.msg = "Hi Angularjs";
+            $scope.name = function () {
+                alert("name added - zameer");
+
+            }
+            $scope.myMail = function (mail) {
+                alert(mail);
+            }
+
+
+        })
+
+        app.controller("2ndController", function ($scope) {
+            $scope.firstname = "Mohamed";
+            $scope.secondname = "Zameer";
+        })
+
+        app.controller("courseController", function($scope){
+            $scope.course="AngularJS";
+            $scope.duration="4 months";
+        })
+    </script>
+
+    <style>
+        body {
+            background-color: lightblue;
+            width: 800px;
+            margin: auto;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body ng-app>
+
+    <h1>Angularjs directives</h1>
+
+    <div>
+        <p>{{5+100}}</p>
+        <p>{{"Mohamed"+"Zameer"}}</p>
+    </div>
+
+
+    <div ng-init="r=15;pi=3.14">
+
+        <h3>area of circle is: {{2*pi*r*r}} </h3>
+
+    </div>
+
+    <div ng-init="arr=[20,23,54,32,222]">
+        <ol>
+            <li ng-repeat="x in arr">{{x}}</li>
+        </ol>
+    </div>
+
+    <div ng-init="checked=true">
+
+        New user : <input type="checkbox" ng-model="checked"> <br>
+
+        <div ng-if="checked"> Enter your name <input type="text"> </div>
+
+        readonly <input type="text" ng-readonly="checked" value="Read the line"> <br>
+        Disabled <input type="text" ng-disabled="checked" value="This line is disabled">
+
+
+        <div ng-controller="MyController"> {{msg}} <br>
+
+            <button ng-click="name()">Add me</button> <br>
+
+            Enter Mail id : <input type="text" ng-model="eMail"> <br>
+
+            <button ng-click="myMail(eMail)"> Show Mail</button>
+
+
+
+
+        </div>
+
+        <div ng-controller="2ndController">
+            first name : {{firstname}} <br>
+            second name : {{secondname}}
+        </div>
+
+        <div ng-controller="courseController">
+
+            course <input type="text" ng-model="course"> <br>
+            duration <input type="text" ng-model="duration"> <br>
+
+            course with duration : {{course +" in "+duration}}
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AngularJs Expressions</title>
+    <script src="https://cdn.jsdelivr.net/npm/angular@1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app>
+    <center>
+        <h1>Expressions</h1>
+        {{40+10}} <br>
+        {{ "welcome"+" all"}} <br>
+        {{true + false}}
+
+
+        <div ng-init="s=25">
+
+            <h3> Area of a Square is : {{s*s}}</h3>
+
+
+        </div>
+
+        <div ng-init="r=15;pi=3.14">
+
+            <h3>area of circle is: {{2*pi*r*r}} </h3>
+
+        </div>
+        <div ng-init="firstname = 'Mohamed';secondname='Zameer'">
+
+            <h3>
+
+                {{firstname}} <br>
+                {{secondname}}
+
+            </h3>
+
+        </div>
+        <div ng-init="arr=[1,2,3,4,5,6,7]">
+
+            <h3>
+
+                {{arr[3]}}
+
+            </h3>
+
+        </div>
+        <div ng-init="user={name:'zameer',age:23,id:33}">
+
+            <h3>
+
+                id: {{user.id}} <br>
+                name: {{user.name}} <br>
+                age: {{user.age}}
+
+            </h3>
+
+        </div>
+
+    </center>
+
+
+
+
+</body>
+
+</html>

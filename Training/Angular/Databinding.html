@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Bind</title>
+    <script src="https://cdn.jsdelivr.net/npm/angular@1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module("Myapp", []);
+
+        //controller
+        app.controller("oneWay", function ($scope) {
+
+            //Model
+            $scope.msg = "Hello World";
+        })
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <center>
+
+        <!-- view -->
+        <div ng-controller="oneWay">
+
+            <h1>{{msg}}</h1><br>
+
+            <span ng-bind="msg"></span>
+
+        </div>
+
+    </center>
+
+</body>
+
+</html>

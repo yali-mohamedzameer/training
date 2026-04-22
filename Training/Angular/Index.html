@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AngularJS Test</title>
+  <script src="https://cdn.jsdelivr.net/npm/angular@1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="testApp">
+
+  <div style="text-align: center; margin-top: 50px;">
+    <p>Enter your name: </p> <input type="text" ng-model="name" placeholder="Type name here...">
+    <!-- <h1>Hello, {{ name }}!</h1> -->
+    <p>hi !</p> <span ng-bind="name"></span>
+  </div>
+
+  <script>
+    angular.module('testApp', []);
+  </script>
+
+</body>
+
+</html>
