@@ -20,3 +20,6 @@ queries :
    )
 7. alter table table_name add new_colname  int(Datatype)
 8. alter table table_name drop col_name - drops column
+9. insert into table_name values(1,"Punjab Kings",5,0,10;) - passing values inside
+10. select * from table_name - selecting and showing the datas
+11. Conditions : Where - select * from IPL where name ="SRH"; 
